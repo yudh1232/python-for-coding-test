@@ -10,7 +10,7 @@ for i in range(n):
 value.sort()
 
 # DP를 위한 리스트
-d = [0] * 10001
+d = [0] * (m + 1)
 
 # 가능 경우 리스트
 possible_case = []
