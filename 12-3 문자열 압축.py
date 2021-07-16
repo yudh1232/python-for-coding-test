@@ -5,10 +5,10 @@ test_case = ["aabbaccc", "ababcdcdababcdcd", "abcabcdede", "abcabcabcabcdededede
 s = "xababcdcdababcdcd"
 
 # 문자열 중 가장 짧은 것의 길이, result 값 초기화
-result = 1000
+result = len(s)
 
 # 압축 단위를 1부터 1씩 늘려가며 확인
-for i in range(1, len(s) + 1):
+for i in range(1, len(s) // 2 + 1):
     # 현재 단위 문자열 초기화
     current = ''
     # 압축 결과 문자열 초기화
