@@ -45,7 +45,7 @@ s_x = 0
 s_y = 0
 s_dir = grid[0][0][1]
 result = grid[0][0][0]
-fish.pop(grid[0][0][0] - 1)
+fish.remove(grid[0][0][0])
 grid[0][0] = (0, s_dir)
 finish = False
 
